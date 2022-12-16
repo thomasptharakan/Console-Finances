@@ -90,11 +90,10 @@ var finances = [
 
 
 
-// (Total/Number of months)
-var months = Number(finances.length);
 
 
 
+//Declare Variables
 var netProfitLoss = 0;
 var changeProfit = 0;
 var netChangeProfit = 0;
@@ -104,6 +103,10 @@ var greatestIncreaseMonth = "";
 var greatestDecrease = 0;
 var greatestDecreaseMonth = ""
 
+// (Total/Number of months)
+var months = Number(finances.length);
+
+//Loop over dataset for financial calculations
 for (i = 0; i < finances.length; i++) {
     netProfitLoss = netProfitLoss + finances[i][1];
     if ((i + 1) < finances.length){
@@ -126,8 +129,11 @@ for (i = 0; i < finances.length; i++) {
 }
 // The average of the changes in Profit/Losses over the entire period.
 averageChangeProfit = netChangeProfit / (months-1);
+//Round the result to 2 decimal digits
 averageChangeProfit = averageChangeProfit.toFixed(2);
 
+
+//Sample Output
 // Financial Analysis
 // ----------------------------
 // Total Months: 25
