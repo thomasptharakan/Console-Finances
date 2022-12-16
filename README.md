@@ -33,7 +33,7 @@ Link to hosted site : https://thomasptharakan.github.io/Console-Finances/
 
 2. Open index.html in a browser
 
-![ScreenShot](/images/screen.png)
+![ScreenShot](images/screen.png)
 
 
 
